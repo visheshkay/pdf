@@ -1,0 +1,48 @@
+
+  
+  .dropzone {
+    border: 2px dashed #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropzone:hover {
+    background-color: #e9f5ff;
+  }
+  
+  .view-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .view-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1506748686214e9df14f1b39d5da2b74') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
