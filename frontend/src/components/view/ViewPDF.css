@@ -1,61 +1,41 @@
 .view-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-size: cover;
-    color: #333;
-    position: relative;
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  
-  .pdf-viewer {
-    width: 100%;
-    max-width: 1200px;
-    height: 90%;
-    border: none;
-  }
-  
-  .back-button {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    background-color: #007bff;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    outline: none;
-  }
-  
-  .back-button:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-  }
-  
-  .back-button:active {
-    background-color: #004494;
-    transform: translateY(0);
-  }
-  
-  @media (max-width: 768px) {
-    .back-button {
-      font-size: 16px;
-      padding: 10px 20px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .back-button {
-      font-size: 14px;
-      padding: 8px 16px;
-    }
-  }
-  
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width:100vw;
+}
+
+.view-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.pdf-container {
+  display: flex;
+  flex: 1;
+}
+
+.pdf-viewer {
+  flex: 4; /* Adjusted to take more space */
+  height: 100%;
+}
+
+.input-container {
+  flex: 1; /* Keeps the input container at 20% width */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  box-sizing: border-box; /* Ensures padding does not affect width calculation */
+}
+
+.acronym-input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%; /* Full width of its container */
+}
+
+.definition-display {
+  font-size: 1.5em;
+  color: #333;
+}
